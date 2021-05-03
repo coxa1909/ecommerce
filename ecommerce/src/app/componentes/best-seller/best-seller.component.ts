@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-best-seller',
+  selector: 'eco-best-seller',
   templateUrl: './best-seller.component.html',
   styleUrls: ['./best-seller.component.css']
 })
