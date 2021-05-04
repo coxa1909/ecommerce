@@ -8,10 +8,17 @@ import { ProductGridComponent } from './componentes/product-grid/product-grid.co
 import { BannerComponent } from './componentes/banner/banner.component';
 import { BestSellerComponent } from './componentes/best-seller/best-seller.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { HeadersComponent } from './componentes/headers/headers.component';
+import { HeadersModule } from './componentes/headers/headers.module';
+import { BannerModule } from './componentes/banner/banner.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+       ],
+  exports: [
+    AppComponent,
+    HeadersComponent,
     FeatureSliderComponent,
     ProductGridComponent,
     BannerComponent,
@@ -20,6 +27,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    HeadersModule,
+    BannerModule,
     AppRoutingModule
   ],
   providers: [],
