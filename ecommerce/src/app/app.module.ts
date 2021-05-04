@@ -10,7 +10,12 @@ import { BestSellerComponent } from './componentes/best-seller/best-seller.compo
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HeadersComponent } from './componentes/headers/headers.component';
 import { HeadersModule } from './componentes/headers/headers.module';
+import { FeatureSliderModule } from './componentes/feature-slider/feature-slider.module';
+import { ProductGridModule } from './componentes/product-grid/product-grid.module';
 import { BannerModule } from './componentes/banner/banner.module';
+import { BestSellerModule } from './componentes/best-seller/best-seller.module';
+import { FooterModule } from './componentes/footer/footer.module';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,11 @@ import { BannerModule } from './componentes/banner/banner.module';
   imports: [
     BrowserModule,
     HeadersModule,
+    FeatureSliderModule,
+    ProductGridModule,
     BannerModule,
+    BestSellerModule,
+    FooterModule,
     AppRoutingModule
   ],
   providers: [],
